@@ -1696,7 +1696,7 @@ void CThreadLocalBase::Set( void *value )
 
 //-----------------------------------------------------------------------------
 
-#ifdef MSVC
+#ifdef _MSC_VER
 //#ifdef _X360
 #define TO_INTERLOCK_PARAM(p)		((volatile long *)p)
 #define TO_INTERLOCK_PTR_PARAM(p)	((void **)p)
@@ -2149,7 +2149,7 @@ static CDynamicFunction<TryEnterCriticalSectionFunc_t> DynTryEnterCriticalSectio
 
 bool CThreadMutex::TryLock()
 {
-#if defined( MSVC )
+#if defined( _MSC_VER )
 #ifdef THREAD_MUTEX_TRACING_ENABLED
 	uint thisThreadID = ThreadGetCurrentId();
 	if ( m_bTrace && m_currentOwnerID && ( m_currentOwnerID != thisThreadID ) )
@@ -2718,7 +2718,7 @@ PLATFORM_INTERFACE void SetCurThreadPS3( CThread *pThread )
 #else
 // The CThread implementation needs to be inlined for performance on the PS3 - It makes a difference of more than 1ms/frame
 // for other platforms, we include the .inl in the .cpp file where it existed before
-#include "../public/tier0/threadtools.inl"
+#include "tier0/threadtools.inl"
 #endif
 
 //-----------------------------------------------------------------------------
