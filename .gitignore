@@ -1,0 +1,11 @@
+game/bin/
+temp/
+
+*.vscode
+*.vs
+*.vcxproj.user
+*.suo
+
+.DS_Store
+Thumbs.db
+*desktop.ini
