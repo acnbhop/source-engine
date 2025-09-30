@@ -12,9 +12,9 @@
 #pragma once
 #endif
 
-#include "basetypes.h"
-#include "dbgflag.h"
-#include "platform.h"
+#include "tier0/basetypes.h"
+#include "tier0/dbgflag.h"
+#include "tier0/platform.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdarg.h>
