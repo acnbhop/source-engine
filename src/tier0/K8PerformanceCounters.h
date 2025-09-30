@@ -80,7 +80,7 @@ public:
 
     unsigned short m_eventMask;
     int event_id;
-    tchar * name;
+    const tchar * name;     // C2440: cannot convert from const char [N] to tchar*
     tchar revRequired;
     int eventSelectNum;
     UnitEncode unitEncode;
