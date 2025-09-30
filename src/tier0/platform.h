@@ -1,6 +1,8 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
 //
 // Purpose:
+// 
+// TODO: This file is a huge mess, I will fix it later.
 //
 // $NoKeywords: $
 //
@@ -288,7 +290,12 @@ typedef double				float64;
 // for when we don't care about how many bits we use
 typedef unsigned int		uint;
 
+#if PLATFORM_64BITS
+#define COMPILER_MSVC64 1
+#endif
+
 #ifdef _MSC_VER
+#define COMPILER_MSVC 1
 #pragma once
 // Ensure that everybody has the right compiler version installed. The version
 // number can be obtained by looking at the compiler output when you type 'cl'
@@ -543,7 +550,7 @@ typedef void * HINSTANCE;
 // !!! NOTE: if you get a compile error here, you are using VALIGNOF on an abstract type :NOTE !!!
 #define VALIGNOF_PORTABLE( type ) ( sizeof( AlignOf_t<type> ) - sizeof( type ) )
 
-#if defined( COMPILER_GCC ) || defined( COMPILER_MSVC )
+#if defined( COMPILER_GCC ) || defined( _MSC_VER )
 #define VALIGNOF( type ) __alignof( type )
 #define VALIGNOF_TEMPLATE_SAFE( type ) VALIGNOF_PORTABLE( type )
 #else
