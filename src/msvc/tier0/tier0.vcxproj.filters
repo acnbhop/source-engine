@@ -1,2 +1,346 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{cd5edc24-f5cc-4f9f-855f-e1f7b7f5b455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{ac5293b4-b138-49a3-a1be-f2b389475a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_res">
+      <UniqueIdentifier>{63b89455-fc8d-440a-8536-8425bddfc221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_xbox">
+      <UniqueIdentifier>{a9182e09-4417-46f3-9023-06a85a1140bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\asm">
+      <UniqueIdentifier>{098c08db-b977-4ea1-a90b-9fad55910487}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\tier0\assert_dialog.rc">
+      <Filter>_res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\tier0\afxmem_override.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\assert_dialog.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\commandline.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\cpu.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\cpu_posix.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\cpu_usage.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\cpumonitoring.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\dbg.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\dynfunction.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\etwprof.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\extendedtrace.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\fasttimer.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\mem.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\mem_helpers.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\memdbg.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\meminit.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\memoverride.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\memstd.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\memvalidate.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\minidump.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\pch_tier0.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\platform.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\platform_posix.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\pmc360.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\pme.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\pme_posix.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\PMELib.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\progressbar.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\security.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\security_linux.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\stacktools.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\systeminformation.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\thread.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\threadtools.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\tier0_strtools.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\tslist.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\validator.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\valobject.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\vcrmode.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\vcrmode_posix.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\vcrmode_xbox.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\vprof.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\win32consoleio.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_console.cpp">
+      <Filter>_xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_profile.cpp">
+      <Filter>_xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_system.cpp">
+      <Filter>_xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_win32stubs.cpp">
+      <Filter>_xbox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\tier0\basetypes.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\commonmacros.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\cpumonitoring.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\dbg.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\dbgflag.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\dynfunction.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\etwprof.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\EventMasks.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\EventModes.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\extendedtrace.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\fasttimer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\ia32detect.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\icommandline.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\IOCTLCodes.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\K8PerformanceCounters.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\l2cache.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\mem.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\mem_helpers.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\mem_impl_type.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\memalloc.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\memdbgoff.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\memdbgon.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\memstd.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\memvirt.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\minidump.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\P4PerformanceCounters.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\P5P6PerformanceCounters.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\pch_tier0.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\platform.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\pmc360.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\PMELib.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\progressbar.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\protected_things.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\resource.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\stacktools.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\systeminformation.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\testthread.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\threadtools.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\tier0_strtools.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\tmapi_dummy.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\tslist.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\type_traits.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\validator.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\valobject.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\valve_minmax_off.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\valve_minmax_on.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\valve_off.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\valve_on.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\vcr_shared.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\vcrmode.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\vprof.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\vprof_telemetry.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\wchartypes.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\xbox_codeline_defines.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tier0\annotations.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\tier0\InterlockedCompareExchange128.masm">
+      <Filter>sources\asm</Filter>
+    </None>
+    <None Include="..\..\tier0\pointeroverride.asm">
+      <Filter>sources\asm</Filter>
+    </None>
+    <None Include="..\..\tier0\threadtools.inl">
+      <Filter>sources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

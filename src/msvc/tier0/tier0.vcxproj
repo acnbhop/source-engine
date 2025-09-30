@@ -131,6 +131,151 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ResourceCompile Include="..\..\tier0\assert_dialog.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\tier0\afxmem_override.cpp" />
+    <ClCompile Include="..\..\tier0\assert_dialog.cpp" />
+    <ClCompile Include="..\..\tier0\commandline.cpp" />
+    <ClCompile Include="..\..\tier0\cpu.cpp" />
+    <ClCompile Include="..\..\tier0\cpumonitoring.cpp" />
+    <ClCompile Include="..\..\tier0\cpu_posix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\cpu_usage.cpp" />
+    <ClCompile Include="..\..\tier0\dbg.cpp" />
+    <ClCompile Include="..\..\tier0\dynfunction.cpp" />
+    <ClCompile Include="..\..\tier0\etwprof.cpp" />
+    <ClCompile Include="..\..\tier0\extendedtrace.cpp" />
+    <ClCompile Include="..\..\tier0\fasttimer.cpp" />
+    <ClCompile Include="..\..\tier0\mem.cpp" />
+    <ClCompile Include="..\..\tier0\memdbg.cpp" />
+    <ClCompile Include="..\..\tier0\meminit.cpp" />
+    <ClCompile Include="..\..\tier0\memoverride.cpp" />
+    <ClCompile Include="..\..\tier0\memstd.cpp" />
+    <ClCompile Include="..\..\tier0\memvalidate.cpp" />
+    <ClCompile Include="..\..\tier0\mem_helpers.cpp" />
+    <ClCompile Include="..\..\tier0\minidump.cpp" />
+    <ClCompile Include="..\..\tier0\pch_tier0.cpp" />
+    <ClCompile Include="..\..\tier0\platform.cpp" />
+    <ClCompile Include="..\..\tier0\platform_posix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\pmc360.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\pme.cpp" />
+    <ClCompile Include="..\..\tier0\PMELib.cpp" />
+    <ClCompile Include="..\..\tier0\pme_posix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\progressbar.cpp" />
+    <ClCompile Include="..\..\tier0\security.cpp" />
+    <ClCompile Include="..\..\tier0\security_linux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\stacktools.cpp" />
+    <ClCompile Include="..\..\tier0\systeminformation.cpp" />
+    <ClCompile Include="..\..\tier0\thread.cpp" />
+    <ClCompile Include="..\..\tier0\threadtools.cpp" />
+    <ClCompile Include="..\..\tier0\tier0_strtools.cpp" />
+    <ClCompile Include="..\..\tier0\tslist.cpp" />
+    <ClCompile Include="..\..\tier0\validator.cpp" />
+    <ClCompile Include="..\..\tier0\valobject.cpp" />
+    <ClCompile Include="..\..\tier0\vcrmode.cpp" />
+    <ClCompile Include="..\..\tier0\vcrmode_posix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\vcrmode_xbox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\vprof.cpp" />
+    <ClCompile Include="..\..\tier0\win32consoleio.cpp" />
+    <ClCompile Include="..\..\tier0\xbox\xbox_console.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_profile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_system.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\tier0\xbox\xbox_win32stubs.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\tier0\annotations.h" />
+    <ClInclude Include="..\..\tier0\basetypes.h" />
+    <ClInclude Include="..\..\tier0\commonmacros.h" />
+    <ClInclude Include="..\..\tier0\cpumonitoring.h" />
+    <ClInclude Include="..\..\tier0\dbg.h" />
+    <ClInclude Include="..\..\tier0\dbgflag.h" />
+    <ClInclude Include="..\..\tier0\dynfunction.h" />
+    <ClInclude Include="..\..\tier0\etwprof.h" />
+    <ClInclude Include="..\..\tier0\EventMasks.h" />
+    <ClInclude Include="..\..\tier0\EventModes.h" />
+    <ClInclude Include="..\..\tier0\extendedtrace.h" />
+    <ClInclude Include="..\..\tier0\fasttimer.h" />
+    <ClInclude Include="..\..\tier0\ia32detect.h" />
+    <ClInclude Include="..\..\tier0\icommandline.h" />
+    <ClInclude Include="..\..\tier0\IOCTLCodes.h" />
+    <ClInclude Include="..\..\tier0\K8PerformanceCounters.h" />
+    <ClInclude Include="..\..\tier0\l2cache.h" />
+    <ClInclude Include="..\..\tier0\mem.h" />
+    <ClInclude Include="..\..\tier0\memalloc.h" />
+    <ClInclude Include="..\..\tier0\memdbgoff.h" />
+    <ClInclude Include="..\..\tier0\memdbgon.h" />
+    <ClInclude Include="..\..\tier0\memstd.h" />
+    <ClInclude Include="..\..\tier0\memvirt.h" />
+    <ClInclude Include="..\..\tier0\mem_helpers.h" />
+    <ClInclude Include="..\..\tier0\mem_impl_type.h" />
+    <ClInclude Include="..\..\tier0\minidump.h" />
+    <ClInclude Include="..\..\tier0\P4PerformanceCounters.h" />
+    <ClInclude Include="..\..\tier0\P5P6PerformanceCounters.h" />
+    <ClInclude Include="..\..\tier0\pch_tier0.h" />
+    <ClInclude Include="..\..\tier0\platform.h" />
+    <ClInclude Include="..\..\tier0\pmc360.h" />
+    <ClInclude Include="..\..\tier0\PMELib.h" />
+    <ClInclude Include="..\..\tier0\progressbar.h" />
+    <ClInclude Include="..\..\tier0\protected_things.h" />
+    <ClInclude Include="..\..\tier0\resource.h" />
+    <ClInclude Include="..\..\tier0\stacktools.h" />
+    <ClInclude Include="..\..\tier0\systeminformation.h" />
+    <ClInclude Include="..\..\tier0\testthread.h" />
+    <ClInclude Include="..\..\tier0\threadtools.h" />
+    <ClInclude Include="..\..\tier0\tier0_strtools.h" />
+    <ClInclude Include="..\..\tier0\tmapi_dummy.h" />
+    <ClInclude Include="..\..\tier0\tslist.h" />
+    <ClInclude Include="..\..\tier0\type_traits.h" />
+    <ClInclude Include="..\..\tier0\validator.h" />
+    <ClInclude Include="..\..\tier0\valobject.h" />
+    <ClInclude Include="..\..\tier0\valve_minmax_off.h" />
+    <ClInclude Include="..\..\tier0\valve_minmax_on.h" />
+    <ClInclude Include="..\..\tier0\valve_off.h" />
+    <ClInclude Include="..\..\tier0\valve_on.h" />
+    <ClInclude Include="..\..\tier0\vcrmode.h" />
+    <ClInclude Include="..\..\tier0\vcr_shared.h" />
+    <ClInclude Include="..\..\tier0\vprof.h" />
+    <ClInclude Include="..\..\tier0\vprof_telemetry.h" />
+    <ClInclude Include="..\..\tier0\wchartypes.h" />
+    <ClInclude Include="..\..\tier0\xbox_codeline_defines.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\tier0\InterlockedCompareExchange128.masm" />
+    <None Include="..\..\tier0\pointeroverride.asm" />
+    <None Include="..\..\tier0\threadtools.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
